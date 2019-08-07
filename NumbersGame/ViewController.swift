@@ -43,10 +43,12 @@ class ViewController: UIViewController {
       
         // 正解した後リスタートする関数
         func restart(){
-            //カウントを初めからにする
+            // カウントを初めからにする
             count = 0
             //  数字をシャッフル
             randomNum = Int.random(in: 0 ... 100)
+            // 入力された数値を表示するラベルをリスタートする
+            DisplayNum.text = "??"
            
         }
        
@@ -64,9 +66,12 @@ class ViewController: UIViewController {
                 
                 // アラート
                 showlAlert(message:"答えは\(numA)より大きい値です")
-                
+            
                 //入力履歴と改行
                 DisplayHis.text += ("[\(count)] 回目 答えは\(numA)より大きい値です\n")
+                
+                // 入力された数字を表示するラベル
+                DisplayNum.text = "\(numA)"
 
                 
                 
@@ -77,6 +82,9 @@ class ViewController: UIViewController {
                 
                 //入力履歴と改行
                 DisplayHis.text += ("[\(count)] 回目 答えは\(numA)より小さい値です\n")
+                
+                // 入力された数字を表示するラベル
+                DisplayNum.text = "\(numA)"
               
                 
               //答えが入力された値と一致する場合
@@ -85,6 +93,10 @@ class ViewController: UIViewController {
                 showlAlert(message: "\(count)回目で正解しました。\n数字をリセットしました。")
                 //入力履歴と改行
                 DisplayHis.text += ("[正解] 答えは\(answer)でした。\n")
+                // 入力欄を記入された数値にする
+                DisplayNum.text = "\(numA)"
+                // 入力欄を空にする
+                DisplayNum.text = ""
                 // 数値をリスタートする
                 restart()
             }
