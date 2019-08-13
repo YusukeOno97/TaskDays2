@@ -50,7 +50,7 @@
                                     <action selector="TappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFZ-KG-Cgp"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-EG-yvp">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-EG-yvp">
                                 <rect key="frame" x="10" y="274" width="300" height="284"/>
                                 <color key="backgroundColor" red="0.81346827395721322" green="0.87305146522467503" blue="0.96568318399681052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
