@@ -78,7 +78,7 @@ class ViewController: UIViewController {
                 showlAlert(message: "答えは\(numA)より小さい値です")
                 
                 //入力履歴と改行
-                DisplayHis.text += ("[\(count)] 回目 答えは\(numA)より小さい値です\n")
+                DisplayHis.text += ("[\(count)回目] 答えは\(numA)より小さい値です\n")
                 
                 // 入力された数字を表示するラベル
                 DisplayNum.text = "\(numA)"
